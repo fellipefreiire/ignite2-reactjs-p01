@@ -1,14 +1,14 @@
-import {Post} from '../components/Post';
-import '../global.css';
+import { Post } from './';
+import '../../global.css';
 
-import {posts} from '../static/posts';
+import { posts } from '../../static/posts';
 
 export default {
 	title: 'Post',
 	component: Post,
 };
 
-const Template = args => <Post {...args} />;
+// const Template = args => <Post {...args} />;
 
 export const FirstStory = {
 	args: {

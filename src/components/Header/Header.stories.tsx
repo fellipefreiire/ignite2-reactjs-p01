@@ -1,12 +1,12 @@
-import {Header} from './../components/Header';
-import '../global.css';
+import { Header } from './';
+import '../../global.css';
 
 export default {
 	title: 'Header',
 	component: Header,
 };
 
-const Template = args => <Header {...args} />;
+// const Template = args => <Header {...args} />;
 
 export const FirstStory = {
 	args: {

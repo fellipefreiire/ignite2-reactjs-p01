@@ -1,12 +1,12 @@
-import {Comment} from './../components/Comment';
-import '../global.css';
+import { Comment } from './';
+import '../../global.css';
 
 export default {
 	title: 'Comment',
 	component: Comment,
 };
 
-const Template = args => <Comment {...args} />;
+// const Template = args => <Comment {...args} />;
 
 export const FirstStory = {
 	args: {

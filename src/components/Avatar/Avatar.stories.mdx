@@ -1,0 +1,33 @@
+import {Meta, Story, Canvas, ArgsTable} from '@storybook/addon-docs';
+import {Avatar} from './';
+
+<Meta title='Components/Avatar' component={Avatar} />
+
+# Avatar
+
+Esse é o nosso avatar!
+
+<ArgsTable of={Avatar} />
+
+<Canvas>
+	<Story
+		name='With Border'
+		args={{
+			src: 'https://github.com/fellipefreiire.png',
+		}}
+	>
+		{args => <Avatar {...args} />}
+	</Story>
+</Canvas>
+
+<Canvas>
+	<Story
+		name='Without Border'
+		args={{
+			src: 'https://github.com/fellipefreiire.png',
+			hasBorder: false,
+		}}
+	>
+		{args => <Avatar hasBorder={false} {...args} />}
+	</Story>
+</Canvas>
